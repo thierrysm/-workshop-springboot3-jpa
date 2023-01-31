@@ -16,7 +16,7 @@ import java.util.List;
 public class OrderResource {
 
     @Autowired
-    OrderService orderService;
+    private OrderService orderService;
 
     @GetMapping
     public ResponseEntity <List<Order>> findAll() {
